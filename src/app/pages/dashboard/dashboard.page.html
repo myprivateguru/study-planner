@@ -1,0 +1,111 @@
+<ion-header>
+  <ion-toolbar color="primary" no-border>
+    <ion-buttons>
+      <ion-menu-button></ion-menu-button>
+      <ion-title>Dashboard</ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+
+  
+  <ion-toolbar >
+
+    <ion-segment 
+    value="all" 
+    color="primary" 
+    scrollable="true"
+    mode="ios"
+    [(ngModel)]="segmentModel" 
+    (ionChange)="segmentChanged($event)">
+
+      <ion-segment-button value="daily">
+        <ion-label>Daily</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="weekly">
+        <ion-label>Weekly</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="monthly">
+        <ion-label>Monthly</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="segmentModel === 'daily'">
+  <div class="background">
+ 
+  <div class="container">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div class="first">
+            <img src="https://www.gravatar.com/avatar?d=mm&s=140" alt="avatar">
+            <h6>2nd</h6>
+            <a>Ganesh Gaitonde</a>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="second">
+        
+            <img src="https://www.gravatar.com/avatar?d=mm&s=140" alt="avatar">
+            <h2>1st</h2>
+            <a>Sagar Dharmadhikari</a>
+          </div>
+          
+        </ion-col>
+        <ion-col>
+          <div class="third">
+            <img src="https://www.gravatar.com/avatar?d=mm&s=140" alt="avatar">
+            <h6>3rd</h6>
+            <a>Sharma Pravin</a>
+          </div>
+          
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+   
+    
+    
+  
+</div> 
+</div>
+  <ion-grid>
+    <ion-card>
+      <ion-row>
+        <ion-col size="2">
+          <h2>4</h2>
+        </ion-col>
+        <ion-col size="8">
+          <h2>Manmohan Singh</h2>
+          
+        </ion-col>
+        <ion-col size="2">
+          <h2>100</h2>
+        </ion-col>
+      </ion-row>
+
+    </ion-card>
+    <ion-card>
+      <ion-row>
+        <ion-col size="2">
+          <h2>5</h2>
+        </ion-col>
+        <ion-col size="8">
+      <h2>Rajiv Gandhi</h2>
+          
+        </ion-col>
+        <ion-col size="2">
+          <h2>98</h2>
+        </ion-col>
+      </ion-row>
+
+    </ion-card>
+    
+  </ion-grid>
+</ion-content>
+<ion-content *ngIf="segmentModel === 'weekly'">
+Weekly
+</ion-content>
+<ion-content *ngIf="segmentModel === 'monthly'">
+  Monthly
+</ion-content>

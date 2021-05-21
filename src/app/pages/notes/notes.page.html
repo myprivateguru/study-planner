@@ -1,0 +1,50 @@
+<ion-header>
+    <ion-toolbar color="primary" no-border>
+      
+  
+      <ion-buttons>
+        <ion-back-button></ion-back-button>
+        <ion-title>HandWritten Notes</ion-title>
+      </ion-buttons>
+      
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+  
+    <div class="center">
+      <a>Make sure You have installed and logged in to telegram app  before accessing this content</a>
+    
+        
+        
+  
+    </div>
+    <div *ngIf="note" class="ion-padding">
+  <h5>{{note.eventName}}</h5>
+  <ion-button href="{{note.noteLink}}">Get it now</ion-button>
+  
+  <p> Credits:  {{note.credits}}</p>
+    </div>
+    
+    <ion-item-sliding *ngFor="let chapt of chapters" #slidingItem >
+        <ion-item href="{{chapt.chapterLink}}">
+          <ion-label >
+            <h3>{{chapt.id}} . {{chapt.chapterName}}</h3>
+            
+          </ion-label>
+          <ion-icon *ngIf="chapt.chapterLink!=''" [style.color]="'#2bff6b'" name="checkmark-circle-outline"></ion-icon>
+          <ion-icon *ngIf="chapt.chapterLink==''" [style.color]="'#EF3B51'" name="close-circle-outline"></ion-icon>
+        </ion-item>
+        <ion-item-options>
+          <ion-item-option color="favorite"  >
+            Get Now
+          </ion-item-option>
+          <ion-item-option color="danger" (click)="removeFavorite(slidingItem, session, 'Remove Favorite')"
+            >
+            Remove
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+    
+  </ion-content>
+  

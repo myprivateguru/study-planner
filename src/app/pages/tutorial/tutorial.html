@@ -1,0 +1,57 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button color='primary' (click)="startApp()" [hidden]="!showSkip">Skip</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager="false">
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-1.png" class="slide-image" />
+      <h2 class="slide-title">
+        Welcome to
+        <b>Live Study App</b>
+      </h2>
+      <p>
+        The
+        <b>Live Study app</b>  Get Ebooks , Daily practice problem sheets  in pdf 
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-2.png" class="slide-image" />
+      <h2 class="slide-title">Handwritten Notes?</h2>
+      <p>
+        <b>Exclusive handwritten notes</b> from toppers who joined IIT or AIIMS institutes.</p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-3.png" class="slide-image" />
+      <h2 class="slide-title">Live Quizzes?</h2>
+      <p>
+        Get <b>Live Quizzes</b> to test your preparation</p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-4.png" class="slide-image" />
+      <h2 class="slide-title">Who We are ?</h2>
+      <p>
+        <b>Doubt forums</b> Get connected to Indias leading doubt forums for free </p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-5.png" class="slide-image" />
+      <h2 class="slide-title">Ready to go?</h2>
+      
+      <p>
+          <b>Telegram App must be installed in order to use this application.</b>
+      </p>
+      <ion-button fill="clear" (click)="startApp()">
+        Continue
+        <ion-icon slot="end" name="arrow-forward"></ion-icon>
+      </ion-button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

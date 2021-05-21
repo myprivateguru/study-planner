@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button>
+      </ion-back-button>
+      <ion-title>All Events</ion-title>
+    </ion-buttons>
+    
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-card *ngFor="let course of courses">
+      <img src="{{course.courseImage}}"> 
+      <p >{{course.courseName}}</p>
+      <a>{{course.courseDate}}</a>
+      
+    </ion-card>
+    
+  </ion-grid>
+
+</ion-content>

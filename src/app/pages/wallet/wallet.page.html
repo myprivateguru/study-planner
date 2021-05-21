@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar color="primary" no-border>
+
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+      <ion-title>Wallet</ion-title>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/refer-us']">
+        <ion-icon name="wallet"></ion-icon><ion-badge color="danger">{{coinBalance}}</ion-badge>
+      </ion-button></ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h4></h4>
+  <div class="live-event">
+    <h4>1 </h4>
+   <!-- <img src="../../assets/events/event3.svg" /> -->
+   <div class="info">
+     <div class="content">
+       <h6>You Referred to Manmohan Singh</h6>
+       <p class="stats">
+         <span><ion-icon name="eye"></ion-icon>&nbsp;Date: 21 Jan 2021 8.23pm</span>
+       </p>  
+     </div><ion-label color="danger"> +50</ion-label>
+   </div>  
+  </div>
+  <div class="live-event">
+    <h4>2 </h4>
+   <!-- <img src="../../assets/events/event3.svg" /> -->
+   <div class="info">
+     <div class="content">
+       <h6>You Brought Math Quiz Package</h6>
+       <p class="stats">
+         <span><ion-icon name="eye"></ion-icon>&nbsp;Date: 21 Jan 2021 8.23pm</span>
+       </p>  
+     </div><ion-label color="danger"> -25</ion-label>
+   </div>  
+  </div>
+  <div class="live-event">
+    <h4>3 </h4>
+   <!-- <img src="../../assets/events/event3.svg" /> -->
+   <div class="info">
+     <div class="content">
+       <h6>You Referred to Manmohan Singh</h6>
+       <p class="stats">
+         <span><ion-icon name="eye"></ion-icon>&nbsp;Date: 21 Jan 2021 8.23pm</span>
+       </p>  
+     </div><ion-label color="danger"> +50</ion-label>
+   </div>  
+  </div>
+  
+
+
+</ion-content><ion-footer>
+  <div class="live-event">
+   <!-- <img src="../../assets/events/event3.svg" /> -->
+   <div class="info">
+     <div class="content">
+       <h6>Remaining Balance</h6>  
+     </div><ion-label color="danger"> = {{coinBalance}}</ion-label>
+   </div>  
+  </div>
+</ion-footer>

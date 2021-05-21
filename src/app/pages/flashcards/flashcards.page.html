@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      {{ categoryContent }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="flash-cards" (swipeLeft)="swipeLeft()" (swipeRight)="swipeRight()">
+    <div class="flip-container" (click)="flip()" [class.flipped]="flipped">
+      <div class="flipper">
+    
+        <div class="front" [innerHtml]="frontContent"></div>
+    
+        <div class="back" [innerHtml]="backContent"></div>
+    
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-tab-bar slot="bottom">
+  <ion-tab-button (click)="clickPrevious()">
+    <ion-icon name="arrow-back"></ion-icon>
+    <ion-label>Previous</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button (click)="clickSearch()">
+    <ion-icon name="search"></ion-icon>
+    <ion-label>Search</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button (click)="clickNext()">
+    <ion-icon name="arrow-forward"></ion-icon>
+    <ion-label>Next</ion-label>
+  </ion-tab-button>
+</ion-tab-bar>

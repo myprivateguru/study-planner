@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="primary" no-border>
+    
+
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+      <ion-title>Book Detail</ion-title>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="center">
+    <a>Make sure You have installed and logged in to telegram app  before accessing this content</a>
+  
+      
+      
+
+  </div>
+  <div *ngIf="book" class="ion-padding">
+<h5>{{book.courseName}}</h5>
+<ion-button href="{{book.courseLink}}">Get it now</ion-button>
+
+<p> Credits:  {{book.credits}}</p>
+  </div>
+  
+</ion-content>

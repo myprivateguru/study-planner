@@ -1,0 +1,151 @@
+<ion-header [translucent]="true">
+
+  <ion-toolbar color="primary">
+    <ion-buttons>
+      <ion-menu-button></ion-menu-button>
+      <ion-title>
+        Coins
+      </ion-title>
+      <ion-buttons slot="end">
+        <ion-button [routerLink]="['/wallet']">
+          <ion-icon name="wallet"></ion-icon><ion-badge color="danger">{{coinBalance}}</ion-badge>
+        </ion-button></ion-buttons>
+    </ion-buttons>
+    
+  </ion-toolbar>
+
+  <ion-toolbar >
+    <ion-segment 
+    value="all" 
+    color="primary" 
+    scrollable="true"
+    mode="ios"
+    [(ngModel)]="segmentModel" 
+    (ionChange)="segmentChanged($event)">
+
+      <ion-segment-button value="earn">
+        <ion-label>Earn</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="redeem">
+        <ion-label>Redeem</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+<!-- 
+<ion-content>
+  <div class="container">
+    <img src="../../assets/travel.svg" />
+  
+  </div>
+  <div  class="center"> 
+    <h3>Refer & Earn</h3>
+    <h2 class="refer"> DCGH8</h2>
+    <h6>Refer this code with your friends. on successful joining you will get 50 Coins</h6>
+    <ion-button> Share Now</ion-button>
+  </div>
+  
+
+
+</ion-content>
+ -->
+
+ <ion-content *ngIf="segmentModel === 'earn'">
+   <h4>Daily Tasks</h4>
+   <div class="live-event">
+     <h2>10 </h2><ion-icon name="ribbon-outline"></ion-icon>
+    <!-- <img src="../../assets/events/event3.svg" /> -->
+    <div class="info">
+      <div class="content">
+        <h6>Daily Login</h6>
+        <p class="stats">
+          <span><ion-icon name="eye"></ion-icon>&nbsp;3.4k</span><span><ion-icon name="heart"></ion-icon>&nbsp;8.00k</span>
+        </p>  
+      </div><ion-button (click)="coinsForlogIn()"> now</ion-button>
+    </div>  
+  </div>
+  <div class="live-event">
+    <h2>50 </h2><ion-icon name="ribbon-outline"></ion-icon>
+   <!-- <img src="../../assets/events/event3.svg" /> -->
+   <div class="info">
+     <div class="content">
+       <h6>Invite Friends with Referral Code</h6>
+       <p class="stats">
+         <span><ion-icon name="eye"></ion-icon>&nbsp;3.4k</span><span><ion-icon name="heart"></ion-icon>&nbsp;8.00k</span>
+       </p>  
+     </div><ion-button (click)="inviteNow()"> now</ion-button>
+   </div>  
+ </div>   
+  <ion-card >  
+    <ion-card-content>
+      <div class="container">
+        <img src="../../assets/travel.svg" />
+      
+      </div>
+      <div  class="center"> 
+        <h3>Refer & Earn</h3>
+        <h2 class="refer"> DCGH8</h2>
+        <h6>Refer this code with your friends. on successful joining you will get 50 Coins</h6>
+        <ion-button> Share Now</ion-button>
+      </div>
+      
+    </ion-card-content>
+  </ion-card>
+  
+  <h4>Novice Tasks</h4>
+  <div class="live-event">
+    <h2>50 </h2><ion-icon name="ribbon-outline"></ion-icon>
+   <!-- <img src="../../assets/events/event3.svg" /> -->
+   <div class="info">
+     <div class="content">
+       <h6>Login For 1st Time</h6>
+       <p class="stats">
+         <span><ion-icon name="eye"></ion-icon>&nbsp;3.4k</span><span><ion-icon name="heart"></ion-icon>&nbsp;8.00k</span>
+       </p>  
+     </div><ion-button (click)="getCoins()"> now</ion-button>
+   </div>  
+ </div>
+ <div class="live-event">
+  <h2>100 </h2><ion-icon name="ribbon-outline"></ion-icon>
+ <!-- <img src="../../assets/events/event3.svg" /> -->
+ <div class="info">
+   <div class="content">
+     <h6>Apply an Invitation Code</h6>
+     <p class="stats">
+       <span><ion-icon name="eye"></ion-icon>&nbsp;3.4k</span><span><ion-icon name="heart"></ion-icon>&nbsp;8.00k</span>
+     </p>  
+   </div><ion-button (click)="getCoins()"> now</ion-button>
+ </div>  
+</div>
+
+ </ion-content>
+
+ <ion-content *ngIf="segmentModel === 'redeem'">
+  <h4>Offers</h4>
+  <div class="live-event">
+    <h2>50 </h2><ion-icon name="ribbon-outline"></ion-icon>
+   <!-- <img src="../../assets/events/event3.svg" /> -->
+   <div class="info">
+     <div class="content">
+       <h6>Silver</h6>
+       <p class="stats">
+         <span><ion-icon name="eye"></ion-icon>&nbsp;3.4k</span><span><ion-icon name="heart"></ion-icon>&nbsp;8.00k</span>
+       </p>  
+     </div><ion-button color="danger" (click)="redeemCoins()"> Redeem</ion-button>
+   </div>  
+ </div>
+ <div class="live-event">
+  <h2>50 </h2><ion-icon name="ribbon-outline"></ion-icon>
+ <!-- <img src="../../assets/events/event3.svg" /> -->
+ <div class="info">
+   <div class="content">
+     <h6>Gold</h6>
+     <p class="stats">
+       <span><ion-icon name="eye"></ion-icon>&nbsp;3.4k</span><span><ion-icon name="heart"></ion-icon>&nbsp;8.00k</span>
+     </p>  
+   </div><ion-button color="danger" (click)="redeemCoins()"> Redeem</ion-button>
+ </div>  
+</div>
+ 
+ </ion-content>

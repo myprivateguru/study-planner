@@ -1,0 +1,1039 @@
+{
+  "schedule": [
+    {
+      "date": "2047-05-17",
+      "groups": [
+        {
+          "time": "2021-05-12",
+          "sessions": [
+            {
+              "name": "Mock Test On Circular Motion",
+              "timeStart": "8:00 am",
+              "timeEnd": "9:00 am",
+              "location": "Dining Slot",
+              "tracks": ["Physics"],
+              "id": "1"
+            }
+          ]
+        },
+        {
+          "time": "2021-05-15",
+          "sessions": [
+            {
+              "name": "Test On Ionic Equilibrium",
+              "location": "Slot 2",
+              "description": "",
+              "speakerNames": ["Ted Turtle"],
+              "timeStart": "9:30 am",
+              "timeEnd": "9:45 am",
+              "tracks": ["Ionic"],
+              "id": "2"
+            },
+            {
+              "name": "Test on Ionic Chemistry",
+              "location": "Executive Ballroom",
+              "description": "",
+              "speakerNames": ["Rachel Rabbit"],
+              "timeStart": "9:45 am",
+              "timeEnd": "10:00 am",
+              "tracks": ["Chemistry"],
+              "id": "3"
+            },
+            {
+              "name": "Test On Electrostatics",
+              "location": "Slot 3",
+              "description": "",
+              "speakerNames": ["Ellie Elephant"],
+              "timeStart": "9:15 am",
+              "timeEnd": "9:30 am",
+              "tracks": ["Ionic"],
+              "id": "4"
+            }
+          ]
+        },
+        {
+          "time": "2021-05-18",
+          "sessions": [
+            {
+              "name": "Quiz on Current Electricity",
+              "location": "Slot 1",
+              "description": "",
+              "speakerNames": ["Eva Eagle", "Lionel Lion"],
+              "timeStart": "10:00 am",
+              "timeEnd": "10:15 am",
+              "tracks": ["Physics"],
+              "id": "5"
+            },
+            {
+              "name": "Test on Alcohols Phenols ",
+              "location": "Slot 3",
+              "description": "",
+              "speakerNames": ["Rachel Rabbit"],
+              "timeStart": "10:15 am",
+              "timeEnd": "10:30 am",
+              "tracks": ["Chemistry"],
+              "id": "6"
+            },
+            {
+              "name": "Test On Differentiation",
+              "location": "Slot 2",
+              "description": "",
+              "speakerNames": ["Isabella Iguana", "Eva Eagle"],
+              "timeStart": "10:15 am",
+              "timeEnd": "10:30 am",
+              "tracks": ["Math"],
+              "id": "7"
+            },
+            {
+              "name": "Test Sequence and Series",
+              "location": "Grand Ballroom A",
+              "description": "",
+              "speakerNames": ["Charlie Cheetah"],
+              "timeStart": "10:45 am",
+              "timeEnd": "11:00 am",
+              "tracks": ["Math"],
+              "id": "8"
+            }
+          ]
+        },
+        {
+          "time": "2021-05-12",
+          "sessions": [
+            {
+              "name": " Partial Test on Physics",
+              "location": "Slot 1",
+              "description": "",
+              "speakerNames": ["Karl Kitten", "Lionel Lion"],
+              "timeStart": "11:00 am",
+              "timeEnd": "11:45 am",
+              "tracks": ["Physics"],
+              "id": "9"
+            },
+            {
+              "name": "Test on Communication",
+              "location": "Slot 3",
+              "description": "",
+              "speakerNames": ["Lionel Lion", "Gino Giraffe"],
+              "timeStart": "11:30 am",
+              "timeEnd": "11:50 am",
+              "tracks": ["Physics"],
+              "id": "10"
+            },
+            {
+              "name": "Test on Probability Distribution",
+              "location": "Grand Ballroom A",
+              "description": "",
+              "speakerNames": ["Rachel Rabbit", "Eva Eagle"],
+              "timeStart": "11:30 am",
+              "timeEnd": "12:00 pm",
+              "tracks": ["Math"],
+              "id": "11"
+            }
+          ]
+        },
+        {
+          "time": "2021-05-25",
+          "sessions": [
+            {
+              "name": "Test on Differential Equations",
+              "location": "Dining Slot",
+              "description": "",
+              "timeStart": "12:00 pm",
+              "timeEnd": "1:00 pm",
+              "tracks": ["Math"],
+              "id": "12"
+            }
+          ]
+        },
+        {
+          "time": "2021-05-05",
+          "sessions": [
+            {
+              "name": "Test on Aldehydes Ketones and carboxylic acids",
+              "location": "Slot 1",
+              "description": "",
+              "speakerNames": ["Paul Puppy"],
+              "timeStart": "1:00 pm",
+              "timeEnd": "1:15 pm",
+              "tracks": ["Chemistry"],
+              "id": "13"
+            },
+            {
+              "name": "Test On Chemical Kinetics",
+              "location": "Slot 1",
+              "description": "n",
+              "speakerNames": ["Gino Giraffe"],
+              "timeStart": "1:15 pm",
+              "timeEnd": "1:30 pm",
+              "tracks": ["Chemistry"],
+              "id": "14"
+            },
+            {
+              "name": "Test On Equilibrium",
+              "location": "Grand Ballroom B",
+              "description": "n",
+              "speakerNames": ["Molly Mouse", "Burt Bear"],
+              "timeStart": "1:30 pm",
+              "timeEnd": "2:00 pm",
+              "tracks": ["Chemistry"],
+              "id": "15"
+            }
+          ]
+        },
+        {
+          "time": "2021-05-9",
+          "sessions": [
+            {
+              "name": "Test On Evolution",
+              "location": "Slot 2",
+              "description": "n",
+              "speakerNames": ["Burt Bear", "Charlie Cheetah"],
+              "timeStart": "2:00 pm",
+              "timeEnd": "2:30 pm",
+              "tracks": ["Biology"],
+              "id": "16"
+            },
+            {
+              "name": "Test on Heredity",
+              "location": "Grand Ballroom B",
+              "description": "n",
+              "speakerNames": ["Donald Duck"],
+              "timeStart": "2:30 pm",
+              "timeEnd": "2:45 pm",
+              "tracks": ["Biology"],
+              "id": "17"
+            },
+            {
+              "name": "Test On Electromagnetic Induction",
+              "location": "Slot 3",
+              "description": "n",
+              "speakerNames": ["Isabella Iguana", "Ellie Elephant"],
+              "timeStart": "2:45 pm",
+              "timeEnd": "3:00 pm",
+              "tracks": ["Physics"],
+              "id": "18"
+            }
+          ]
+        },
+        {
+          "time": "2021-05-15",
+          "sessions": [
+            {
+              "name": "Test On Functions",
+              "location": "Slot 1",
+              "description": "n",
+              "speakerNames": ["Ted Turtle"],
+              "timeStart": "3:00 pm",
+              "timeEnd": "3:30 pm",
+              "tracks": ["Math"],
+              "id": "19"
+            },
+            {
+              "name": "Test On Integration",
+              "location": "Slot 2",
+              "description": "n",
+              "speakerNames": ["Rachel Rabbit"],
+              "timeStart": "3:30 pm",
+              "timeEnd": "3:45 pm",
+              "tracks": ["Math"],
+              "id": "20"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "events": [
+    {
+      "chapters":[
+        {
+          "id":"1",
+          "chapterName":"Some Basic concepts of chemistry",
+          "chapterLink":"https://t.me/neet_iit_chemistry/23",
+          "credits":"@mahohar"
+          },
+          {
+          "id":"2",
+          "chapterName":"Structure of atom",
+          "chapterLink":"",
+          "credits":"@mahohar"
+          },
+          {
+          "id":"3",
+          "chapterName":"Classification of Elements and periodicity in properties",
+          "chapterLink":"",
+          "credits":"@mahohar"
+          },
+          {
+          "id":"4",
+          "chapterName":"Chemical Bonding and molecular structure",
+          "chapterLink":"",
+          "credits":"@mahohar"
+          },
+          {
+          "id":"5",
+          "chapterName":"States of matter",
+          "chapterLink":"",
+          "credits":"@mahohar"
+          },
+          {
+          "id":"6",
+          "chapterName":"Thermodynamics",
+          "chapterLink":"",
+          "credits":"@mahohar"
+          },
+          {
+          "id":"7",
+          "chapterName":"Equilibrium",
+          "chapterLink":"",
+          "credits":"@mahohar"
+          },
+          {
+          "id":"8",
+          "chapterName":"Redox Reaction",
+          "chapterLink":"",
+          "credits":"@mahohar"
+          },
+          {
+          "id":"9",
+          "chapterName":"Hrdrogen",
+          "chapterLink":"",
+          "credits":"@mahohar"
+          },
+          {
+          "id":"10",
+          "chapterName":"Environmental Chemistry",
+          "chapterLink":"",
+          "credits":"@mahohar"
+          },
+          {
+          "id":"11",
+          "chapterName":"The Solid state",
+          "chapterLink":"",
+          "credits":"@mahohar"
+          },
+          {
+          "id":"12",
+          "chapterName":"Solutions",
+          "chapterLink":"",
+          "credits":"@mahohar"
+          },
+          {
+          "id":"13",
+          "chapterName":"Electrochemistry",
+          "chapterLink":"",
+          "credits":"@mahohar"
+          },
+          {
+          "id":"14",
+          "chapterName":"Chemical Kinetics",
+          "chapterLink":"",
+          "credits":"@mahohar"
+          },
+          {
+          "id":"15",
+          "chapterName":"Surface Chemistry",
+          "chapterLink":"",
+          "credits":"@mahohar"
+          },
+          {
+          "id":"16",
+          "chapterName":"General Principles and process of isolation of elements",
+          "chapterLink":"",
+          "credits":"@mahohar"
+          },
+          {
+          "id":"17",
+          "chapterName":"The P block elements",
+          "chapterLink":"",
+          "credits":"@mahohar"
+          },
+          {
+          "id":"18",
+          "chapterName":"Co-ordination compounds",
+          "chapterLink":"",
+          "credits":"@mahohar"
+          },
+          {
+          "id":"19",
+          "chapterName":"Haloalkanes and haloarenes",
+          "chapterLink":"",
+          "credits":"@mahohar"
+          },
+          {
+          "id":"20",
+          "chapterName":"Alcohols , Phenols and Ethers",
+          "chapterLink":"",
+          "credits":"@mahohar"
+          },
+          {
+          "id":"21",
+          "chapterName":"Aldehydes, Ketones and Carboxyic acids",
+          "chapterLink":"",
+          "credits":"@mahohar"
+          },
+          {
+          "id":"22",
+          "chapterName":"Amines",
+          "chapterLink":"",
+          "credits":"@mahohar"
+          },
+          {
+          "id":"23",
+          "chapterName":"BioMolecules",
+          "chapterLink":"",
+          "credits":"@mahohar"
+          },
+          {
+          "id":"24",
+          "chapterName":"Polymers",
+          "chapterLink":"",
+          "credits":"@mahohar"
+          },
+          {
+          "id":"25",
+          "chapterName":"Chemistry in everyday Life",
+          "chapterLink":"",
+          "credits":"@mahohar"
+          }
+      ],
+      "id":"1",
+      "eventName":"Chemistry HandWritten Notes",
+      "eventTime":12.00,
+      "eventViews":"3.3k",
+      "eventLikes":"1.1k",
+      "location":"Pune",
+      "noteLink":"https://t.me/iit_jee/1",
+      "credits":"@Santo_raj"
+
+  },
+  {
+    "chapters":[
+      {
+        "id":"1",
+        "chapterName":"Logic",
+        "chapterLink":"",
+        "credits":"@mahohar"
+        },
+        {
+        "id":"2",
+        "chapterName":"Matrix",
+        "chapterLink":"",
+        "credits":"@mahohar"
+        },
+        {
+        "id":"3",
+        "chapterName":"Trigonometric functions",
+        "chapterLink":"",
+        "credits":"@mahohar"
+        },
+        {
+        "id":"4",
+        "chapterName":"Pair of straight lines",
+        "chapterLink":"",
+        "credits":"@mahohar"
+        },
+        {
+        "id":"5",
+        "chapterName":"Vectors",
+        "chapterLink":"",
+        "credits":"@mahohar"
+        },
+        {
+        "id":"6",
+        "chapterName":"Three Dimensional Geometry",
+        "chapterLink":"",
+        "credits":"@mahohar"
+        },
+        {
+        "id":"7",
+        "chapterName":"Line",
+        "chapterLink":"",
+        "credits":"@mahohar"
+        },
+        {
+        "id":"8",
+        "chapterName":"Plane",
+        "chapterLink":"",
+        "credits":"@mahohar"
+        },
+        {
+        "id":"9",
+        "chapterName":"Linear Programming",
+        "chapterLink":"",
+        "credits":"@mahohar"
+        },
+        {
+        "id":"10",
+        "chapterName":"Continuity",
+        "chapterLink":"",
+        "credits":"@mahohar"
+        },
+        {
+        "id":"11",
+        "chapterName":"Differentiation",
+        "chapterLink":"",
+        "credits":"@mahohar"
+        },
+        {
+        "id":"12",
+        "chapterName":"Application of derivatives",
+        "chapterLink":"",
+        "credits":"@mahohar"
+        },
+        {
+        "id":"13",
+        "chapterName":"Integration",
+        "chapterLink":"",
+        "credits":"@mahohar"
+        },
+        {
+        "id":"14",
+        "chapterName":"Definite integral",
+        "chapterLink":"",
+        "credits":"@mahohar"
+        },
+        {
+        "id":"15",
+        "chapterName":"Application of definite integral",
+        "chapterLink":"",
+        "credits":"@mahohar"
+        },
+        {
+        "id":"16",
+        "chapterName":"Differential equations",
+        "chapterLink":"",
+        "credits":"@mahohar"
+        },
+        {
+        "id":"17",
+        "chapterName":"Probability Distribution",
+        "chapterLink":"",
+        "credits":"@mahohar"
+        },
+        {
+        "id":"18",
+        "chapterName":"Binomial Distribution",
+        "chapterLink":"",
+        "credits":"@mahohar"
+        }
+    ],
+    "id":"2",
+    "eventName":"Math HandWritten Notes",
+    "eventTime":12.00,
+    "eventViews":"2.2k",
+    "eventLikes":"2.3k",
+    "location":"Banglore",
+    "noteLink":"https://t.me/iit_jee/2",
+    "credits":"@abu_raj"
+},
+{
+  "chapters":[
+    {
+    "id":"1",
+    "chapterName":"Units and Dimensions",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"2",
+    "chapterName":"Measurements and errors",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"3",
+    "chapterName":"Vectors",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"4",
+    "chapterName":"Kinematics",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"5",
+    "chapterName":"Laws of Motion",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"6",
+    "chapterName":"Friction",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"7",
+    "chapterName":"Work,Energy and Power",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"8",
+    "chapterName":"Circular Motion",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"9",
+    "chapterName":"Center of Mass ,Momentum, an collision",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"10",
+    "chapterName":"Rotational Dynamics",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"11",
+    "chapterName":"Gravitation",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"12",
+    "chapterName":"Mechanical Properties of matter",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"13",
+    "chapterName":"Fluid Mechanics",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"14",
+    "chapterName":"Simple Harmonic Motion",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"15",
+    "chapterName":"Wave Motion and string Waves",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"16",
+    "chapterName":"Sound Waves",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"17",
+    "chapterName":"Electrostatics",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"18",
+    "chapterName":"Capacitors",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"19",
+    "chapterName":"Current Electricity",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"20",
+    "chapterName":"Magnetism",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"21",
+    "chapterName":"Electromagnetic Induction",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"22",
+    "chapterName":"Alternating Current",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"23",
+    "chapterName":"Thermodynamics",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"24",
+    "chapterName":"Kinetic Theory",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"25",
+    "chapterName":"Heat Transfer",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"26",
+    "chapterName":"Thermal Expansion",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"27",
+    "chapterName":"Optics",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"28",
+    "chapterName":"Wave Optics",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"29",
+    "chapterName":"Electromagnetic waves",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"30",
+    "chapterName":"Modern Physics",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"31",
+    "chapterName":"Nuclear Physics",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"32",
+    "chapterName":"Semiconductor and Electomagnetic Devices",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    },
+    {
+    "id":"33",
+    "chapterName":"Communication Systems",
+    "chapterLink":"",
+    "credits":"@mahohar"
+    }
+ ],
+    
+  "id":"3",
+  "eventName":"Physics HandWritten Notes",
+  "eventTime":12.00,
+  "eventViews":"5.5k",
+  "eventLikes":"7.7k" ,
+  "location":"Mumbai",
+  "noteLink":"https://t.me/iit_jee/5",
+  "credits":"@mahohar"
+},
+{
+  "id":"4",
+  "eventName":"Biology HandWritten Notes",
+  "eventTime":12.00,
+  "eventViews":"5.5k",
+  "eventLikes":"7.7k" ,
+  "location":"Mumbai",
+  "noteLink":"https://t.me/neet_biology/5",
+  "credits":"@mahohar"
+}
+],
+"courses": [
+  {
+    "id":1,
+    "courseName":"Physical Chemistry I",
+    "courseDate":"Prof Narendra Awasthi",
+    "courseImage":"https://images-na.ssl-images-amazon.com/images/I/619ExJgNAjL.jpg",
+    "courseLink":"https://t.me/iit_jee/672",
+    "credits":"@abu_raj",
+    "publisher":"Arihant"
+},
+{
+  "id":2,
+  "courseName":" Concepts of Physics Vol I",
+  "courseDate":"Prof H C Verma",
+  "courseImage":"https://images-na.ssl-images-amazon.com/images/I/71EK+TbNJkL.jpg",
+  "courseLink":"https://t.me/iit_jee/662" ,
+  "credits":"@mahohar",
+  "publisher":"Arihant"
+},
+{
+  "id":3,
+  "courseName":"Waves & Thermodynamics",
+  "courseDate":"Prof D C Pandey",
+  "courseImage":"https://images-eu.ssl-images-amazon.com/images/I/41heIUlJgwL._SX198_BO1,204,203,200_QL40_ML2_.jpg",
+  "courseLink":"https://t.me/iit_jee/1790",
+  "credits":"@Santo_raj",
+  "publisher":"Arihant"
+},
+{
+  "id":4,
+  "courseName":"Fundamentals of Physics",
+  "courseDate":"Prof Slotiday Resnick Walker",
+  "courseImage":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCz5VLyV6QprHBnUYcCI5SQ2LI1TTGc4sSsJQMTbPXUGccYyQC7xosY9ydChhLKJXJ50o1_oGd&usqp=CAc",
+  "courseLink":"https://t.me/iit_jee/220",
+  "credits":"@Santo_raj",
+  "publisher":"Arihant"
+},
+{
+  "id":5,
+  "courseName":" Objective Mathmatics Part I",
+  "courseDate":"Prof R D Sharma",
+  "courseImage":"data:image/jpeg;base64,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",
+  "courseLink":"https://t.me/iit_jee/397",
+  "credits":"@Santo_raj",
+  "publisher":"Arihant"
+},
+{
+  "id":6,
+  "courseName":" Objective Mathmatics Part II",
+  "courseDate":"Prof R D Sharma",
+  "courseImage":"data:image/jpeg;base64,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",
+  "courseLink":"https://t.me/iit_jee/399",
+  "credits":"@Santo_raj",
+  "publisher":"Arihant"
+},
+{
+  "id":7,
+  "courseName":"Higher Algebra",
+  "courseDate":"Slot & Knight",
+  "courseImage":"https://images-na.ssl-images-amazon.com/images/I/418ar8RPn-L._SX319_BO1,204,203,200_.jpg",
+  "courseLink":"https://t.me/iit_jee/397",
+  "credits":"@Santo_raj",
+  "publisher":"Arihant"
+}
+],
+
+  "speakers": [
+    {
+      "name": "Burt Bear",
+      "profilePic": "/assets/img/speakers/bear.jpg",
+      "instagram": "ionicframework",
+      "twitter": "ionicframework",
+      "about": "Burt is a Bear. Burt's interests include poetry, dashing space heroes, and lions.",
+      "title": "Software Engineer",
+      "location": "Everywhere",
+      "email": "burt@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "1"
+    },
+    {
+      "name": "Charlie Cheetah",
+      "profilePic": "/assets/img/speakers/cheetah.jpg",
+      "instagram": "ionicframework",
+      "twitter": "ionicframework",
+      "about": "Charlie is a Cheetah. Charlie's interests include country music, plush animals, pyrotechnics, and skeletons.",
+      "title": "Software Engineer",
+      "location": "Everywhere",
+      "email": "charlie@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "2"
+    },
+    {
+      "name": "Donald Duck",
+      "profilePic": "/assets/img/speakers/duck.jpg",
+      "instagram": "ionicframework",
+      "twitter": "ionicframework",
+      "about": "Donald is a Duck. Donald's interests include carpentry, superheroes, merpeople, and glam rock.",
+      "title": "Software Engineer",
+      "location": "Everywhere",
+      "email": "donald@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "3"
+    },
+    {
+      "name": "Eva Eagle",
+      "profilePic": "/assets/img/speakers/eagle.jpg",
+      "instagram": "ionicframework",
+      "twitter": "ionicframework",
+      "about": "Eva is an Eagle. Eva's interests include ants, seashells, and cupcakes.",
+      "title": "Developer Advocate",
+      "location": "Everywhere",
+      "email": "eva@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "4"
+    },
+    {
+      "name": "Ellie Elephant",
+      "profilePic": "/assets/img/speakers/elephant.jpg",
+      "instagram": "ionicframework",
+      "twitter": "ionicframework",
+      "about": "Ellie is an Elephant. Ellie's interests include pocket watches, pool, hand fans, and ninjas.",
+      "title": "Software Engineer",
+      "location": "Everywhere",
+      "email": "ellie@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "5"
+    },
+    {
+      "name": "Gino Giraffe",
+      "profilePic": "/assets/img/speakers/giraffe.jpg",
+      "instagram": "ionicframework",
+      "twitter": "ionicframework",
+      "about": "Gino is a Giraffe. Gino's interests include candy-making, unicorns, and birdhouses.",
+      "title": "Software Engineer",
+      "location": "Everywhere",
+      "email": "gino@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "6"
+    },
+    {
+      "name": "Isabella Iguana",
+      "profilePic": "/assets/img/speakers/iguana.jpg",
+      "instagram": "ionicframework",
+      "twitter": "ionicframework",
+      "about": "Isabella is an Iguana. Isabella's interests include crystals, architecture, and candle-making.",
+      "title": "Software Engineer",
+      "location": "Everywhere",
+      "email": "isabella@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "7"
+    },
+    {
+      "name": "Karl Kitten",
+      "profilePic": "/assets/img/speakers/kitten.jpg",
+      "instagram": "ionicframework",
+      "twitter": "ionicframework",
+      "about": "Karl is a Kitten. Karl's interests include skiing, jewelry, and needlepoint.",
+      "title": "Developer Advocate",
+      "location": "Everywhere",
+      "email": "karl@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "8"
+    },
+    {
+      "name": "Lionel Lion",
+      "profilePic": "/assets/img/speakers/lion.jpg",
+      "instagram": "ionicframework",
+      "twitter": "ionicframework",
+      "about": "Lionel is a Lion. Lionel's interests include lizards and mathematics.",
+      "title": "Developer Advocate",
+      "location": "Everywhere",
+      "email": "lionel@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "9"
+    },
+    {
+      "name": "Molly Mouse",
+      "profilePic": "/assets/img/speakers/mouse.jpg",
+      "instagram": "ionicframework",
+      "twitter": "ionicframework",
+      "about": "Molly is a Mouse. Molly's interests include werewolves and magic.",
+      "title": "Software Engineer",
+      "location": "Everywhere",
+      "email": "molly@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "10"
+    },
+    {
+      "name": "Paul Puppy",
+      "profilePic": "/assets/img/speakers/puppy.jpg",
+      "instagram": "ionicframework",
+      "twitter": "ionicframework",
+      "about": "Paul is a Puppy. Paul's interests include maps, whales, and dragons.",
+      "title": "Software Engineer",
+      "location": "Everywhere",
+      "email": "paul@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "11"
+    },
+    {
+      "name": "Rachel Rabbit",
+      "profilePic": "/assets/img/speakers/rabbit.jpg",
+      "instagram": "ionicframework",
+      "twitter": "ionicframework",
+      "about": "Rachel is a Rabbit. Rachel's interests include clowns, skeletons, and yo-yos.",
+      "title": "Senior Software Engineer",
+      "location": "Everywhere",
+      "email": "rachel@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "12"
+    },
+    {
+      "name": "Ted Turtle",
+      "profilePic": "/assets/img/speakers/turtle.jpg",
+      "instagram": "ionicframework",
+      "twitter": "ionicframework",
+      "about": "Ted is a Turtle. Ted's interests include butterflies, skiing, and cupcakes.",
+      "title": "Software Engineer",
+      "location": "Everywhere",
+      "email": "ted@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "13"
+    }
+  ],
+
+  "map": [
+    {
+      "name": "Monona Terrace Convention Center",
+      "lat": 43.071584,
+      "lng": -89.38012,
+      "center": true
+    },
+    {
+      "name": "Ionic HQ",
+      "lat": 43.074395,
+      "lng": -89.381056
+    },
+    {
+      "name": "Afterparty - Brocach Irish Pub",
+      "lat": 43.07336,
+      "lng": -89.38335
+    }
+  ],
+
+  "tracks": [
+    {
+      "name": "Angular",
+      "icon": "logo-angular"
+    },
+    {
+      "name": "Documentation",
+      "icon": "document"
+    },
+    {
+      "name": "Physics",
+      "icon": "restaurant"
+    },
+    {
+      "name": "Ionic",
+      "icon": "logo-ionic"
+    },
+    {
+      "name": "Chemistry",
+      "icon": "hammer"
+    },
+    {
+      "name": "Design",
+      "icon": "color-palette"
+    },
+    {
+      "name": "Services",
+      "icon": "cog"
+    },
+    {
+      "name": "Physics",
+      "icon": "construct"
+    },
+    {
+      "name": "Communication",
+      "icon": "call"
+    },
+    {
+      "name": "Math",
+      "icon": "compass"
+    }
+  ]
+}
