@@ -1,17 +1,29 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient ,HttpHeaders} from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { of } from 'rxjs';
 import { map } from 'rxjs/operators';
-
+import sha256 from 'crypto-js/sha256';
 import { UserData } from './user-data';
+import { Storage } from '@ionic/storage';
+import { ToastController } from '@ionic/angular';
+
+export interface InputOptions {
+  otp: string;
+  txn_Id: string;
+}
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class ConferenceData {
+  OTP:InputOptions=  { otp: '',txn_Id:''}
   data: any;
+  sampleData: any;
+  TOKEN_data: any;
 
-  constructor(public http: HttpClient, public user: UserData) {}
+  constructor(public http: HttpClient, public user: UserData,public storage: Storage,
+    private toastCtrl: ToastController) {}
 
   load(): any {
     if (this.data) {
@@ -172,4 +184,91 @@ export class ConferenceData {
       })
     );
   }
+
+  async presentToast(message, position, duration) {
+    const toast = await this.toastCtrl.create({
+      message: message,
+      position: position,
+      duration: duration
+    });
+    toast.present();
+  }
+
+getSlotData(){
+  return this.http.get('https://cdn-api.co-vin.in/api/v2/admin/location/districts/11');
+}
+bookSlots(){
+  return this.http.get('assets/data/slots.json');
+  // return this.http.get('https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByPin?pincode=110001&date=31-03-2021');
+}
+sendPOSTRequest(mobile){
+  /* var headers= new Headers();
+  headers.append("Accept",'application/json');
+  headers.append('Content-Type','application/json'); */
+  const httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type':  'application/json',
+      "Accept":'application/json'
+      })
+    };
+    let postData={
+      "mobile":mobile
+    }
+   return this.http.post("https://cdn-api.co-vin.in/api/v2/auth/public/generateOTP",postData,httpOptions)
+    .subscribe((data:any)=>{
+      this.sampleData=data;
+      this.presentToast('TXN ID :'+this.sampleData.txnId,'bottom',1500);
+      console.log("data  "+this.sampleData.txnId);
+      this.setTransaction(this.sampleData.txnId);
+      console.log(['_body']);
+    },error=>{console.log(error);
+    });
+}
+
+otpVerify(data){
+  this.getTransaction().then(sup=>{
+    this.OTP.txn_Id=sup;
+    this.OTP.otp=sha256(data);
+    console.log("otp : "+this.OTP.otp);
+    console.log("txnId : "+this.OTP.txn_Id);
+    this.postOTP(this.OTP.otp,this.OTP.txn_Id);
+  });
+  
+}
+
+postOTP(otp,txnId){
+  const httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type':  'application/json',
+      "Accept":'application/json'
+      })
+    };
+    let postData={
+      "otp ": otp,
+      "txnId ": txnId
+    }
+
+    console.log("Post data "+otp+" "+txnId);
+    this.http.post("https://cdn-api.co-vin.in/api/v2/auth/public/confirmOTP",postData,httpOptions)
+    .subscribe((data) =>{
+      this.TOKEN_data=data;
+      this.presentToast(this.TOKEN_data.token,'bottom',1500);
+      console.log("token is  "+this.TOKEN_data.token);
+      console.log(['_body']);
+    },error=>{console.log(error);
+      this.presentToast(error.error,'bottom',1500);
+    });
+
+}
+setTransaction(txnId: string): Promise<any> {
+  return this.storage.set('TxnId', txnId);
+}
+
+getTransaction(): Promise<string> {
+  return this.storage.get('TxnId').then((value) => {
+   
+    console.log("transaction val "+value)
+    return value;
+  });
+}
 }

@@ -67,6 +67,10 @@ const routes: Routes = [
   },  {
     path: 'update',
     loadChildren: () => import('./pages/update/update.module').then( m => m.UpdatePageModule)
+  },
+  {
+    path: 'book-slot',
+    loadChildren: () => import('./pages/book-slot/book-slot.module').then( m => m.BookSlotPageModule)
   }
 
 

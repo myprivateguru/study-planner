@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title>COWIN SLOTS </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form #loginForm="ngForm" novalidate>
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked" color="primary">PINCODE</ion-label>
+        <ion-input [(ngModel)]="login.username" name="username" type="text" #username="ngModel" spellcheck="false" autocapitalize="off"
+          required>
+        </ion-input>
+      </ion-item>
+
+      <ion-text color="danger">
+        <p [hidden]="username.valid || submitted == false" class="ion-padding-start">
+          Username is required
+        </p>
+      </ion-text>
+
+      <ion-item>
+        <ion-label position="stacked" color="primary">DATE</ion-label>
+        <ion-input [(ngModel)]="login.password" name="password" type="text" #password="ngModel" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-text color="danger">
+        <p [hidden]="password.valid || submitted == false" class="ion-padding-start">
+          Password is required
+        </p>
+      </ion-text>
+    </ion-list>
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="onLogin(loginForm)" type="submit" expand="block">SUBMIT</ion-button>
+      </ion-col>
+     
+    </ion-row>
+  </form>
+
+
+
+  <ion-grid fixed>
+    <div *ngIf="data">
+    <ion-row *ngFor="let slot of data">
+      <ion-card >
+        <ion-card-content>
+          <p>CENTER ID: {{slot.center_id}}</p>
+          <h3>HOSPITAL NAME: {{slot.name}}</h3>
+          
+          
+          
+          <p>{{slot.address}}</p>
+          <p>{{slot.address_l}}</p>
+          <p>{{slot.state_name}}</p>
+          <p>PINCODE : {{slot.pincode}}</p>
+          <p>District : {{slot.district_name}}</p>
+          <p>VACCINE: {{slot.vaccine}}</p>
+          <p>CAPACITY 1: {{slot.available_capacity_dose1}}</p>
+          <p>CAPACITY 2:{{slot.available_capacity_dose2}}</p>
+          <p>Age : {{slot.min_age_limit}}</p>
+          <p>Date : {{slot.date}}</p>
+          <p>AVAILABLE: {{slot.from}} to {{slot.to}}</p>
+          
+        </ion-card-content>
+        
+      </ion-card>
+    </ion-row>
+    </div>
+      </ion-grid>
+
+</ion-content>

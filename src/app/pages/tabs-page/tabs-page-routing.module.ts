@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs-page';
 import { SchedulePage } from '../schedule/schedule';
-
+import {BookSlotPage} from '../book-slot/book-slot.page';
 
 const routes: Routes = [
   {
@@ -54,6 +54,15 @@ const routes: Routes = [
           {
             path: '',
             loadChildren: () => import('../about/about.module').then(m => m.AboutModule)
+          }
+        ]
+      },
+      {
+        path: 'book-slot',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../book-slot/book-slot.module').then(m => m.BookSlotPageModule)
           }
         ]
       },

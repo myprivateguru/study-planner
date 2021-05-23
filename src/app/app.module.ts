@@ -12,10 +12,15 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { FormsModule } from '@angular/forms';
+import { AngularFireModule } from "@angular/fire";
+import { AngularFireAuthModule } from "@angular/fire/auth";
+import { AngularFirestoreModule } from "@angular/fire/firestore";
+
 import { coreComponentModule} from './components/components.module'
 @NgModule({
   imports: [
     BrowserModule,
+    AngularFireAuthModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
@@ -27,7 +32,7 @@ import { coreComponentModule} from './components/components.module'
     })
   ],
   declarations: [AppComponent],
-  providers: [InAppBrowser, SplashScreen, StatusBar],
+  providers: [InAppBrowser, SplashScreen, StatusBar,AngularFirestoreModule],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

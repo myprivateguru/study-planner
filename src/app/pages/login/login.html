@@ -1,4 +1,4 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
@@ -52,3 +52,129 @@
   </form>
 
 </ion-content>
+ -->
+<!-- /**
+* Ionic Firebase Full Auth App  (https://store.enappd.com/product/firebase-starter-full-auth/)
+*
+* Copyright © 2019-present Enappd. All rights reserved.
+*
+* This source code is licensed as per the terms found in the
+* LICENSE.md file in the root directory of this source tree.
+*/  -->
+
+
+<ion-content no-padding>
+  <div class="main">
+    <ion-card no-margin>
+      <ion-card-content>
+        <ion-row class="row">
+          <div class="fire-logo">
+            <img src="assets/logo.png" class="img-logo">
+            <ion-text padding>
+              <h2 no-margin margin-vertical text-center>Welcome to CoWin Services</h2>
+            </ion-text>
+          </div>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-input clearInput type="email" placeholder="Email" [(ngModel)]="email" class="input" padding-horizontal
+              clear-input="true"></ion-input>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-input clearInput type="tel" placeholder="Mobile Number" [(ngModel)]="mobile" class="input" padding-horizontal
+              clear-input="true"></ion-input>
+          </ion-col>
+        </ion-row>
+        <!-- <ion-row *ngIf="showOTPInput">
+          <ion-col>
+            <ion-input clearInput type="tel" [(ngModel)]="OTP" maxlength="6" class="otpinput" padding-horizontal>
+            </ion-input>
+          </ion-col>
+        </ion-row> -->
+        <ion-row *ngIf="showOTPInput" class="OTP-border">
+          <ion-col>
+            <div>
+              <ion-input name="1"  type="tel" [(ngModel)]="OTP.a" maxlength="6" class="otpinput"
+                padding-horizontal>
+              </ion-input>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <ion-input name="2"  type="tel" [(ngModel)]="OTP.b" maxlength="1" class="otpinput"
+                padding-horizontal>
+              </ion-input>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <ion-input name="3"  type="tel" [(ngModel)]="OTP.c" maxlength="1" class="otpinput"
+                padding-horizontal>
+              </ion-input>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <ion-input name="4"  type="tel" [(ngModel)]="OTP.d" maxlength="1" class="otpinput"
+                padding-horizontal>
+              </ion-input>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <ion-input name="5"  type="tel" [(ngModel)]="OTP.e" maxlength="1" class="otpinput"
+                padding-horizontal>
+              </ion-input>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <ion-input name="6"  type="tel" [(ngModel)]="OTP.f" maxlength="1" class="otpinput"
+                padding-horizontal>
+              </ion-input>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row *ngIf="showOTPInput">
+          <ion-col>
+            <ion-text class="small">{{OTPmessage}}</ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button *ngIf="!showOTPInput" expand="block" (click)="next(mobile)" color="undefined" class="transition">
+              <strong class="white">
+                Next</strong></ion-button>
+            <ion-button *ngIf="showOTPInput" expand="block" (click)="register()" color="undefined" class="transition">
+              <strong class="white">
+                Register</strong></ion-button>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <ion-text text-center class="block">Already have an account ?
+              <span class="bold">Login here</span></ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-text text-center class="block bold">Forgot Password</ion-text>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title text-center>
+      Made In INDIA
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>
+
+
+
