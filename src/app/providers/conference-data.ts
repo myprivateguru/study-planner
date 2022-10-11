@@ -21,6 +21,8 @@ export class ConferenceData {
   data: any;
   sampleData: any;
   TOKEN_data: any;
+  otp: any;
+  txnId: any;
 
   constructor(public http: HttpClient, public user: UserData,public storage: Storage,
     private toastCtrl: ToastController) {}
@@ -244,11 +246,11 @@ postOTP(otp,txnId){
       })
     };
     let postData={
-      "otp ": otp,
-      "txnId ": txnId
+      "otp ": this.otp,
+      "txnId ": this.txnId
     }
 
-    console.log("Post data "+otp+" "+txnId);
+    console.log("Post data "+postData);
     this.http.post("https://cdn-api.co-vin.in/api/v2/auth/public/confirmOTP",postData,httpOptions)
     .subscribe((data) =>{
       this.TOKEN_data=data;
